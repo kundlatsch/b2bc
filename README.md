@@ -1,3 +1,5 @@
+![Carcule Meme](assets/carcule.jpeg)
+
 # B2B/C Protocol — Educational Specification v1.0
 
 > **Important note**

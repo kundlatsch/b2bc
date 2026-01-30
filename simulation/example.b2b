@@ -1,0 +1,39 @@
+# ============================================
+# B2B/C Simulation Scenario
+# Educational – Meme Protocol (Carcule Approved)
+# ============================================
+
+# Alice initializes emotional state
+alice -> bob : DELTA>set>mood.happy>0.7
+alice -> bob : DELTA>set>mood.anxious>0.4
+alice -> bob : DELTA>set>mood.calm>0.6
+
+# Alice sets cognitive focus
+alice -> bob : DELTA>set>focus.depth>0.9
+alice -> bob : DELTA>slide>focus.noise>-0.2
+
+# Bob reacts emotionally
+bob -> alice : DELTA>add>mood.happy>0.1
+bob -> alice : DELTA>add>mood.anxious>-0.2
+
+# Bob emits a thought
+bob -> alice : EMIT>signal>thought>I feel a cognitive alignment
+
+# Alice asserts an external state
+alice -> bob : ASSERT>force>environment.light>0.8
+
+# Alice queries specific mood
+alice -> bob : QUERY>get>mood.happy>
+
+# Alice queries overall state
+alice -> bob : QUERY>overall>>
+
+# Bob changes a composite key
+bob -> alice : DELTA>set>memory.short_term.load>0.65
+bob -> alice : DELTA>slide>memory.short_term.load>0.15
+
+# Bob emits another signal
+bob -> alice : EMIT>signal>intuition>Something is shifting
+
+# Final overall query
+alice -> bob : QUERY>overall>>

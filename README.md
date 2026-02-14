@@ -1,11 +1,11 @@
 ![Carcule Meme](assets/carcule.jpeg)
 
-# B2B/C Protocol — Educational Specification v1.0
+# B2B/C Protocol v1.0
 
 > **Important note**
 > The B2B/C protocol is **educational, experimental, and intentionally playful**. It was created as a learning tool and a conceptual sandbox.
 >
-> The **“C” in B2B/C stands for *Carcule*** — a meme character that serves as the unofficial mascot of the protocol. Yes, the protocol is literally based on a meme.
+> The **“C” in B2B/C stands for *Carcule*** — a meme character that serves as the unofficial mascot of the protocol.
 
 ---
 
